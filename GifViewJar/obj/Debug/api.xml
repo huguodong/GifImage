@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="com.ant.liao">
+<interface abstract="true" deprecated="not deprecated" final="false" name="GifAction" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="parseOk" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="GifDecoder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GifDecoder" static="false" type="com.ant.liao.GifDecoder" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="com.ant.liao.GifAction">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GifDecoder" static="false" type="com.ant.liao.GifDecoder" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+<parameter name="p1" type="com.ant.liao.GifAction">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="free" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentFrame" native="false" return="com.ant.liao.GifFrame" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDelay" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDelays" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFrame" native="false" return="com.ant.liao.GifFrame" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFrameCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFrameImage" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getImage" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLoopCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="next" native="false" return="com.ant.liao.GifFrame" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseOk" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="STATUS_FINISH" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_FORMAT_ERROR" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_OPEN_ERROR" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_PARSING" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="height" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="width" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="GifFrame" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GifFrame" static="false" type="com.ant.liao.GifFrame" visibility="public">
+<parameter name="p0" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="delay" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="image" static="false" transient="false" type="android.graphics.Bitmap" type-generic-aware="android.graphics.Bitmap" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="nextFrame" static="false" transient="false" type="com.ant.liao.GifFrame" type-generic-aware="com.ant.liao.GifFrame" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View" extends-generic-aware="android.view.View" final="false" name="GifView" static="false" visibility="public">
+<implements name="com.ant.liao.GifAction" name-generic-aware="com.ant.liao.GifAction">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="GifView" static="false" type="com.ant.liao.GifView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GifView" static="false" type="com.ant.liao.GifView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GifView" static="false" type="com.ant.liao.GifView" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.util.AttributeSet">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseOk" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGifImage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGifImage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGifImage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGifImageType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="com.ant.liao.GifView.GifImageType">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShowDimension" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showCover" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="GifView.1" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" final="false" name="GifView.DrawThread" static="false" visibility=""/>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" extends-generic-aware="java.lang.Enum&lt;com.ant.liao.GifView.GifImageType&gt;" final="true" name="GifView.GifImageType" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="com.ant.liao.GifView.GifImageType" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="com.ant.liao.GifView.GifImageType[]" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="COVER" static="true" transient="false" type="com.ant.liao.GifView.GifImageType" type-generic-aware="com.ant.liao.GifView.GifImageType" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SYNC_DECODER" static="true" transient="false" type="com.ant.liao.GifView.GifImageType" type-generic-aware="com.ant.liao.GifView.GifImageType" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WAIT_FINISH" static="true" transient="false" type="com.ant.liao.GifView.GifImageType" type-generic-aware="com.ant.liao.GifView.GifImageType" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R" static="false" type="com.ant.liao.R" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.attr" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.attr" static="false" type="com.ant.liao.R.attr" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.drawable" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.drawable" static="false" type="com.ant.liao.R.drawable" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="icon" static="true" transient="false" type="int" type-generic-aware="int" value="2130837504" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="R.string" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="R.string" static="false" type="com.ant.liao.R.string" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="app_name" static="true" transient="false" type="int" type-generic-aware="int" value="2130903041" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="hello" static="true" transient="false" type="int" type-generic-aware="int" value="2130903040" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>

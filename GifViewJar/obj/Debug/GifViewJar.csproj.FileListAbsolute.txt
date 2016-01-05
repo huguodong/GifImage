@@ -1,0 +1,12 @@
+E:\xamarin\GifImage\GifViewJar\bin\Debug\GifViewJar.dll
+E:\xamarin\GifImage\GifViewJar\bin\Debug\GifViewJar.pdb
+E:\xamarin\GifImage\GifViewJar\bin\Debug\mscorlib.dll
+E:\xamarin\GifImage\GifViewJar\bin\Debug\zh-Hans\mscorlib.resources.dll
+E:\xamarin\GifImage\GifViewJar\bin\Debug\normidna.nlp
+E:\xamarin\GifImage\GifViewJar\bin\Debug\normnfc.nlp
+E:\xamarin\GifImage\GifViewJar\bin\Debug\normnfd.nlp
+E:\xamarin\GifImage\GifViewJar\bin\Debug\normnfkc.nlp
+E:\xamarin\GifImage\GifViewJar\bin\Debug\normnfkd.nlp
+E:\xamarin\GifImage\GifViewJar\obj\Debug\GifViewJar.csprojResolveAssemblyReference.cache
+E:\xamarin\GifImage\GifViewJar\obj\Debug\GifViewJar.dll
+E:\xamarin\GifImage\GifViewJar\obj\Debug\GifViewJar.pdb
